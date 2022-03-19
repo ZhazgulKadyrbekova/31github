@@ -2,23 +2,29 @@ import java.util.*
 
 fun main() {
     println(removeOuterParentheses("(()())(())"))
+    println(removeOuterParentheses("()()"))
 }
 
 fun removeOuterParentheses(s: String): String {
     val size = s.length - 1
     val brackets = Stack<Char>()
     var count = 0
+    var i = 1
 
-    for (i in 0..size) {
+    while (i <= size) {
         val char = s[i]
         brackets.push(char)
         if (char == '(') count++
         else count--
 
-        if (count != 0) {
+        println("$i\t$char\t$count\t$brackets")
+
+        if (count < 0) {
             brackets.pop()
-            count++
+            i++
+            count = 0
         }
+        i++
     }
-    return brackets.joinToString()
+    return brackets.joinToString("")
 }
