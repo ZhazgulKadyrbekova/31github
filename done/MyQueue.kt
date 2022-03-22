@@ -1,5 +1,3 @@
-package done
-
 import java.util.*
 
 fun main() {
@@ -10,13 +8,6 @@ fun main() {
     println(obj.pop())
     println(obj.empty())
 }
-
-/*
-
-["MyQueue", "push", "push", "peek", "pop", "empty"]
-[[], [1], [2], [], [], []]
-
-*/
 
 class MyQueue() {
     private val stack = Stack<Int>()
