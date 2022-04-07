@@ -5,6 +5,28 @@ fun main() {
 }
 
 fun countConsistentStrings(allowed: String, words: Array<String>): Int {
+    var allowedBytes = 0
+    for (i in allowed) {
+        val order = i.toInt() - 97
+        allowedBytes = allowedBytes or (1 shl order)
+    }
+    var count = 0
+    for (word in words) {
+        var flag = true
+        for (i in word) {
+            val order = i.toInt() - 97
+            val number = 1 shl order
+            if (hammingWeight(allowedBytes and number) != 1) {
+                flag = false
+                break
+            }
+        }
+        if (flag) count++
+    }
+    return count
+}
+
+fun countConsistentStrings2(allowed: String, words: Array<String>): Int {
     val allowedChars = allowed.toCharArray()
 
     var counter = 0
