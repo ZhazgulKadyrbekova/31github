@@ -7,12 +7,11 @@ fun main() {
 fun convertToTitle(columnNumber: Int): String {
     val stringBuilder = StringBuilder()
     var num = columnNumber
-    while (num > 0) {
-        println()
-        println("$num\t$stringBuilder")
-        val lettersNumber = num % 26
+    while (num >= 1) {
+        val char =  if (num % 26 == 0) { num--; 'Z' }
+                    else { (num % 26 + 64).toChar() }
+        stringBuilder.insert(0, char)
         num /= 26
-        stringBuilder.append((lettersNumber + 64).toChar())
     }
     return stringBuilder.toString()
 }
