@@ -1,3 +1,5 @@
+package done
+
 fun main() {
     val rectangle = arrayOf(
         intArrayOf(1,2,1),
