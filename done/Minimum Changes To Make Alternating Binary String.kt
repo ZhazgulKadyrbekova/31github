@@ -3,7 +3,7 @@ fun main() {
     println(minOperations("1111"))
 }
 
-fun minOperations(s: String): Int {
+private fun minOperations(s: String): Int {
     var count1 = 0; var count2 = 0
     var i = 0; val size = s.length - 1
     while (i < size) {
