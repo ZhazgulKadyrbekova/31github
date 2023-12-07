@@ -1,6 +1,6 @@
 package advance;
 
-public class Solution {
+public class Day6 {
 
     public static void main(String[] args) {
 //        int a = 44, b = 283;
