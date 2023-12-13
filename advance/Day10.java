@@ -12,7 +12,8 @@ public class Day10 {
     public static List<Character> vertical2 = List.of('|','L','J');
     public static List<Character> horizontalLeft = List.of('|','L','F');
     public static List<Character> horizontalRight = List.of('-','7','J');
-    public static void cfs.main(String[] args) throws IOException {
+
+    public static void main(String[] args) throws IOException {
         getInputList();
 
         //s coordinates
