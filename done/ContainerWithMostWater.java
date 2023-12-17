@@ -1,6 +1,7 @@
 package done;
 
 class ContainerWithMostWater {
+
     public int maxArea(int[] height) {
         int start = 0, end = height.length - 1;
         int area = 0, max = 0;
@@ -22,4 +23,5 @@ class ContainerWithMostWater {
     private int getArea(int bottom, int side) {
         return bottom * side;
     }
+
 }
