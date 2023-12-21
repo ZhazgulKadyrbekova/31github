@@ -1,9 +1,10 @@
+import done.IsSubsequence;
+
 public class Solution {
     public static void main(String[] args) {
-        var solution = new StringCompression();
+        var solution = new IsSubsequence();
 
-        char[] chars = new char[]{'a','a','b','b','c','c','c'};
-        System.out.println(solution.compress(chars));
+        System.out.println(solution.isSubsequence("s", "t"));
     }
 
 }
