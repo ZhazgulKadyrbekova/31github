@@ -1,13 +1,14 @@
-import java.util.HashSet;
-import java.util.Set;
+package done;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PathCrossing {
     public boolean isPathCrossing(String path) {
-        Set<Coordinates> coordinates = new HashSet<>();
+        List<Coordinates> coordinates = new ArrayList<>();
         Coordinates cur = new Coordinates(0,0);
         coordinates.add(cur);
         for (char ch : path.toCharArray()) {
-            int startSize = coordinates.size();
             int x = cur.x;
             int y = cur.y;
             switch (ch) {
@@ -29,11 +30,12 @@ public class PathCrossing {
                 }
             }
             var a = new Coordinates(x,y);
-            coordinates.add(a);
-            cur = a;
-            if (coordinates.size() == startSize) {
+
+            if (coordinates.contains(a)) {
                 return true;
             }
+            coordinates.add(a);
+            cur = a;
         }
         return false;
     }
@@ -53,12 +55,6 @@ public class PathCrossing {
         }
 
         @Override
-        public int hashCode() {
-            String a = x + "" + y;
-            return Integer.parseInt(a);
-        }
-
-        @Override
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
@@ -70,7 +66,7 @@ public class PathCrossing {
                 return false;
             }
             Coordinates coordinates = (Coordinates) obj;
-            if (this.hashCode() == coordinates.hashCode()) {
+            if (this.x == coordinates.x && this.y == coordinates.y) {
                 return true;
             }
             return false;
