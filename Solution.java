@@ -1,12 +1,11 @@
-import done.MaxConsecutiveOnesIII;
+import done.FindPivotIndex;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new MaxConsecutiveOnesIII();
+        var solution = new FindPivotIndex();
 
-        int[] nums = new int[] {1,1,1,0,0,0,1,1,1,1,0};
-        System.out.println(solution.longestOnes(nums, 2));
-        System.out.println(solution.longestOnes(nums, 3));
+        int[] nums = new int[] {1,7,3,6,5,6};
+        System.out.println(solution.pivotIndex(nums));
     }
 
 }

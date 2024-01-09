@@ -1,5 +1,3 @@
-package contest.d060124;
-
 import java.util.Arrays;
 
 public class SmallestMissingIntegerGreaterThanSequentialPrefixSum {
@@ -14,10 +12,7 @@ public class SmallestMissingIntegerGreaterThanSequentialPrefixSum {
                 index = i;
             }
             else {
-                sum += nums[index];
-                maxSum = Math.max(maxSum, sum);
-                index = i;
-                sum = 0;
+                break;
             }
         }
 
@@ -35,4 +30,5 @@ public class SmallestMissingIntegerGreaterThanSequentialPrefixSum {
     private boolean contains(int[] nums, int num) {
         return Arrays.stream(nums).anyMatch(i -> i == num);
     }
+
 }
