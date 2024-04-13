@@ -1,12 +1,10 @@
-import done.SubarrayProductLessThanK;
-
 public class Solution {
     public static void main(String[] args) {
-        var solution = new SubarrayProductLessThanK();
+        var solution = new FindTheOriginalArrayofPrefixXor();
+        int[] arr = new int[] {5,2,0,3,1};
+        int[] res = solution.findArray(arr);
 
-        int[] nums = new int[] {10,5,2,6};
-        var res = solution.numSubarrayProductLessThanK(nums, 4);
-        System.out.println(res);
+        for (int i : res)
+            System.out.println(i);
     }
-
 }
