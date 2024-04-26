@@ -1,3 +1,5 @@
+package done;
+
 public class NthTribonacciNumber {
     public int tribonacci(int n) {
         if (n == 0) {
