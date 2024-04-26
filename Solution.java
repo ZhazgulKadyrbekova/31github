@@ -1,21 +1,17 @@
-import done.RotateArray;
+import done.BestTimeToBuyAndSellStockII;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new RotateArray();
+        var solution = new BestTimeToBuyAndSellStockII();
 
-//        int[] arr = new int[] {1,2,3,4,5,6,7};
-//        solution.rotate(arr, 3);
-
-        int[] arr = new int[] {1,2,3,4,5,6,7};
-        solution.rotate(arr, 5);
-
-//        int[] arr = new int[] {-1,-100,3,99};
-//        solution.rotate(arr, 2);
-
-        for (int i : arr) {
-            System.out.println(i);
-        }
+        System.out.println(solution.maxProfit(new int[] {2,2,5}));
+        System.out.println(solution.maxProfit(new int[] {7,1,5,3,2,6,4}));
+        System.out.println(solution.maxProfit(new int[] {7,1,3,5,2,6,4}));
+        System.out.println(solution.maxProfit(new int[] {7,1,3,5,6,4}));
+        System.out.println(solution.maxProfit(new int[] {7,1,5,6,4}));
+        System.out.println(solution.maxProfit(new int[] {7,1,5,3,6,4,0}));
+        System.out.println(solution.maxProfit(new int[] {7,1,5,3,6,4,0,6}));
+        System.out.println(solution.maxProfit(new int[] {7,6,4,3,1}));
     }
 
 }
