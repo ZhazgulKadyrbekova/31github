@@ -1,16 +1,13 @@
-import done.JumpGame;
+import done.LargestPositiveIntegerThatExistsWithItsNegative;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new JumpGame();
+        var solution = new LargestPositiveIntegerThatExistsWithItsNegative();
 
-        System.out.println(solution.canJump(new int[] {10,2,5}));
-        System.out.println(solution.canJump(new int[] {2,3,1,1,4}));
-        System.out.println(solution.canJump(new int[] {3,2,1,0,4}));
-        System.out.println(solution.canJump(new int[] {0,3,2,1,4}));
-        System.out.println(solution.canJump(new int[] {3,0,0,0,4}));
-        System.out.println(solution.canJump(new int[] {2,0,1,0,4}));
-        System.out.println(solution.canJump(new int[] {3,0,1,0,4}));
-        System.out.println(solution.canJump(new int[] {3,0,0,1,4}));
+        System.out.println(solution.findMaxK(new int[] {3,3,3,3,3,3,3,3}));
+        System.out.println(solution.findMaxK(new int[] {3, -4}));
+        System.out.println(solution.findMaxK(new int[] {-10,8,6,7,-2,-3}));
+        System.out.println(solution.findMaxK(new int[] {1,-1,2,-2,3}));
     }
+
 }
