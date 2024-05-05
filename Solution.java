@@ -1,16 +1,22 @@
-import done.DecodeString;
+import done.DeleteNodeinaLinkedList;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new DecodeString();
+        var solution = new DeleteNodeinaLinkedList();
 
-        System.out.println(solution.decodeString("3[a]2[bc]"));
-        System.out.println(solution.decodeString("3[a2[c]]"));
-        System.out.println(solution.decodeString("2[abc]3[cd]ef"));
-        System.out.println(solution.decodeString("3[a2[c]b]"));
-        System.out.println(solution.decodeString("2[3[ad]w]2[bc]"));
-        System.out.println(solution.decodeString("100[leetcode]"));
-        System.out.println(solution.decodeString("11[leetcod]e"));
-        System.out.println(solution.decodeString("11[leetcode]"));
+        ListNode node1 = new ListNode(4);
+        ListNode node2 = new ListNode(5);
+        ListNode node3 = new ListNode(1);
+        ListNode node4 = new ListNode(9);
+        node1.setNext(node2);
+        node2.setNext(node3);
+        node3.setNext(node4);
+
+        solution.deleteNode(node1);
+
+        while (node1 != null) {
+            System.out.println(node1.getVal());
+            node1 = node1.getNext();
+        }
     }
 }
