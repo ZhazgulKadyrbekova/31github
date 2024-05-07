@@ -8,10 +8,8 @@ fun main() {
     li2.next = li3
     li3.next = li4
     li4.next = li5
-    printListNode(li1)
 
     val node = reverseList(li1)
-    printListNode(node)
 }
 fun reverseList(head: ListNode?): ListNode? {
     var prev = head

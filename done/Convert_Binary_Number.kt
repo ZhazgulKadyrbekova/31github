@@ -7,9 +7,6 @@ package done
  * Definition for singly-linked list.
  */
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
 
 fun getDecimalValue(head: ListNode?): Int {
     var res = 0

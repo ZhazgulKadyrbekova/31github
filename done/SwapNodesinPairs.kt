@@ -8,10 +8,8 @@ fun main() {
     li2.next = li3
     li3.next = li7
     li7.next = li8
-    printListNode(li1)
 
     val node = swapPairs(li1)
-    printListNode(node)
 }
 
 fun swapPairs(head: ListNode?): ListNode? {

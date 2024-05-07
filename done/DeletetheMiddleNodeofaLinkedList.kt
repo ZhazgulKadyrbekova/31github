@@ -8,10 +8,8 @@ fun main() {
 //    li2.next = li3
 //    li3.next = li7
 //    li7.next = li8
-    printListNode(li1)
 
     deleteMiddle(li1)
-    printListNode(li1)
 }
 
 fun deleteMiddle(head: ListNode?): ListNode? {

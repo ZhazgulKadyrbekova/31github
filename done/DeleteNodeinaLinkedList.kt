@@ -12,10 +12,8 @@ fun main() {
 //    li4.next = li5
 //    li5.next = li6
 //    li6.next = li7
-    printListNode(li1)
 
     deleteNode(li3)
-    printListNode(li1)
 }
 fun deleteNode(node: ListNode?) {
     val next = node?.next!!

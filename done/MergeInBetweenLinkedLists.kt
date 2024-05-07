@@ -13,11 +13,8 @@ fun main() {
 //    li7.next = li8
     li4.next = li5
     li5.next = li6
-    printListNode(li1)
-    printListNode(li4)
 
     val node = mergeInBetween(li1, 1, 1, li4)
-    printListNode(node)
 }
 
 fun mergeInBetween(list1: ListNode?, a: Int, b: Int, list2: ListNode?): ListNode? {

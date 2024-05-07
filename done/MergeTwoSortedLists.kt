@@ -9,11 +9,8 @@ fun main() {
     li2.next = li3
     li4.next = li5
     li5.next = li6
-    printListNode(li1)
-    printListNode(li4)
 
     val node = mergeTwoLists(li1, li4)
-    printListNode(node)
 }
 
 fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {

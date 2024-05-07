@@ -15,11 +15,8 @@ fun main() {
     li7.next = li8
     li4.next = li5
     li5.next = li6
-    printListNode(li3)
-    printListNode(li4)
 
     val node = addTwoNumbers(li3, li4)
-    printListNode(node)
 }
 
 fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {

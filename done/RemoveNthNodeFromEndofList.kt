@@ -9,9 +9,7 @@ fun main() {
 //    node3.next = node4
 //    node4.next = node5
 
-    printListNode(node1)
     node1 = removeNthFromEnd(node1, 1)!!
-    printListNode(node1)
 }
 
 fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {

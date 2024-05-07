@@ -8,10 +8,8 @@ fun main() {
     li2.next = li3
     li3.next = li4
     li4.next = li5
-    printListNode(li1)
 
     deleteDuplicates(li1)
-    printListNode(li1)
 }
 
 fun deleteDuplicates(head: ListNode?): ListNode? {

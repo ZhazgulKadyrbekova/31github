@@ -12,10 +12,8 @@ fun main() {
 //    li4.next = li5
 //    li5.next = li6
 //    li6.next = li7
-    printListNode(li1)
 
     val node = removeElements(li1, 1)
-    printListNode(node)
 }
 
 fun removeElements(head: ListNode?, `val`: Int): ListNode? {

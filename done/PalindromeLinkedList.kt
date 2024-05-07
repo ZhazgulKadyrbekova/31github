@@ -8,7 +8,6 @@ fun main() {
     li2.next = li3
     li3.next = li7
     li7.next = li8
-    printListNode(li1)
     println(isPalindrome(li1))
 
 }

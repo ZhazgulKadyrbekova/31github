@@ -13,8 +13,6 @@ fun main() {
     li6.next = li7
     li7.next = li3
 
-    printListNode(li1)
-    printListNode(li6)
     println(getIntersectionNode(li1,li6))
 }
 
