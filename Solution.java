@@ -1,12 +1,11 @@
-import done.MinCostClimbingStairs;
+import done.FindtheLongestSubstringContainingVowelsinEvenCounts;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new MinCostClimbingStairs();
+        var solution = new FindtheLongestSubstringContainingVowelsinEvenCounts();
 
-        int[] arr = {1,2,3,3,2,2};
-//        int[] arr = {10,15,20};
-//        int[] arr = {1,100,1,1,1,100,1,1,100,1};
-        System.out.println(solution.minCostClimbingStairs(arr));
+        System.out.println(solution.findTheLongestSubstring("eleetminicoworoep"));
+//        System.out.println(solution.findTheLongestSubstring("leetcodeisgreat"));
+//        System.out.println(solution.findTheLongestSubstring("bcbcbc"));
     }
 }
