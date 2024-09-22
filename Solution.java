@@ -1,14 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+import done.KthSmallestinLexicographicalOrder;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new MinimumTimeDifference();
+        var solution = new KthSmallestinLexicographicalOrder();
 
-        List<String> times = new ArrayList<>();
-        times.add("00:00");
-        times.add("23:59");
-        times.add("00:00");
-        System.out.println(solution.findMinDifference(times));
+//        System.out.println(solution.findKthNumber(13,2));
+        System.out.println(solution.findKthNumber(432,124));
+
     }
 }
