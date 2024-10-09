@@ -1,15 +1,11 @@
-import done.MyCalendarTwo;
+import done.GenerateParentheses;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new MyCalendarTwo();
+        var solution = new GenerateParentheses();
 
-
-        System.out.println(solution.book(10,20));
-        System.out.println(solution.book(50,60));
-        System.out.println(solution.book(10,40));
-        System.out.println(solution.book(5,15));
-        System.out.println(solution.book(5,10));
-        System.out.println(solution.book(25,65));
+        for (String i : solution.generateParenthesis(4))
+            System.out.println(i);
     }
+
 }
