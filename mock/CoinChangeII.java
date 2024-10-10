@@ -1,7 +1,8 @@
 package mock;
 
 public class CoinChangeII {
-    public static int solve(int[][] dp, int[] coins, int target, int index) {
+    //top to bottom
+    public static int solveTopToBottom(int[][] dp, int[] coins, int target, int index) {
         if (target == 0) {
             return 1;
         }
@@ -17,24 +18,43 @@ public class CoinChangeII {
         int differentWays = 0;
         for (int i = 0; i <= target / coins[index]; i++) {
             int newTarget = target - coins[index] * i;
-            differentWays += solve(dp, coins, newTarget, index + 1);
+            differentWays += solveTopToBottom(dp, coins, newTarget, index + 1);
         }
 
         dp[target][index] = differentWays;
         return differentWays;
     }
 
+    //bottom to top
+    public static int solveBottomToTop(int[] coins, int target) {
+        int[] dp = new int[target + 1];
+        dp[0] = 1;
+
+        for (int coin : coins) {
+            for (int j = coin; j <= target; j++) {
+                dp[j] += dp[j - coin];
+            }
+        }
+
+        for (int i : dp) {
+            System.out.println(i);
+        }
+        return dp[target];
+    }
+
     public static void main(String[] args) {
         int[] coins = new int[] {1,2,5};
         int target = 5;
 
-        int[][] dp = new int[target + 1][coins.length];
-        for (int i = 0; i <= target; i++){
-            for (int j = 0; j < coins.length; j++) {
-                dp[i][j] = -1;
-            }
-        }
-        System.out.println(solve(dp, coins, target, 0));
+//        int[][] dp = new int[target + 1][coins.length];
+//        for (int i = 0; i <= target; i++){
+//            for (int j = 0; j < coins.length; j++) {
+//                dp[i][j] = -1;
+//            }
+//        }
+//        System.out.println(solveTopToBottom(dp, coins,  target, 0));
+
+        System.out.println(solveBottomToTop(coins, target));
 
         /*
         coins = [2, 5, 6]
