@@ -1,3 +1,5 @@
+import nonsolved.ListNode
+
 fun main() {
     val li1 = ListNode(2)
     val li2 = ListNode(2)
@@ -16,7 +18,7 @@ fun main() {
     println(getIntersectionNode(li1,li6))
 }
 
-fun getIntersectionNode(headA:ListNode?, headB:ListNode?):ListNode? {
+fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
     var nodeA = headA
     var nodeB = headB
     val list = mutableListOf<ListNode>()

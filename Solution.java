@@ -1,12 +1,11 @@
-import done.CoinChange;
+import done.JumpGameIII;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new CoinChange();
+        var solution = new JumpGameIII();
 
-        System.out.println(solution.coinChange(new int[] {3,5},7));
-        System.out.println(solution.coinChange(new int[] {1,2,5},11));
-        System.out.println(solution.coinChange(new int[] {1,6,7,9,11},13));
-        System.out.println(solution.coinChange(new int[] {1,11,6,7,9,10},13));
+        System.out.println(solution.canReach(new int[] {4,2,3,0,3,1,2},5));
+        System.out.println(solution.canReach(new int[] {4,2,3,0,3,1,2},0));
+        System.out.println(solution.canReach(new int[] {3,0,2,1,2},2));
     }
 }
