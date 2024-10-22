@@ -1,9 +1,11 @@
+import util.ListNode
+
 fun main() {
     val li1 = ListNode(2)
     val li2 = ListNode(4)
-//    val li3 = ListNode(7)
-//    val li7 = ListNode(8)
-//    val li8 = ListNode(9)
+//    val li3 = util.ListNode(7)
+//    val li7 = util.ListNode(8)
+//    val li8 = util.ListNode(9)
     li1.next = li2
 //    li2.next = li3
 //    li3.next = li7

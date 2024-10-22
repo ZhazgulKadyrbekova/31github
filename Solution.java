@@ -1,11 +1,16 @@
-import done.JumpGameIII;
+import done.BinaryTreePreorderTraversal;
+
+import util.TreeNode;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new JumpGameIII();
+        var solution = new BinaryTreePreorderTraversal();
 
-        System.out.println(solution.canReach(new int[] {4,2,3,0,3,1,2},5));
-        System.out.println(solution.canReach(new int[] {4,2,3,0,3,1,2},0));
-        System.out.println(solution.canReach(new int[] {3,0,2,1,2},2));
+        var three = new TreeNode(3, null, null);
+        var two = new TreeNode(2, three, null);
+        var one = new TreeNode(1, null, two);
+
+        var res = solution.preorderTraversal(one);
+        System.out.println(res);
     }
 }

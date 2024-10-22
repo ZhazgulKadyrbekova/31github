@@ -1,9 +1,11 @@
+import util.ListNode
+
 fun main() {
     var node1 = ListNode(1)
     val node2 = ListNode(2)
-//    val node3 = ListNode(3)
-//    val node4 = ListNode(4)
-//    val node5 = ListNode(5)
+//    val node3 = util.ListNode(3)
+//    val node4 = util.ListNode(4)
+//    val node5 = util.ListNode(5)
     node1.next = node2
 //    node2.next = node3
 //    node3.next = node4

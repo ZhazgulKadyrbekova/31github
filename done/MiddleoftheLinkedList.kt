@@ -2,11 +2,11 @@ package done
 
 /**
  * Example:
- * var li = ListNode(5)
+ * var li = util.ListNode(5)
  * var v = li.`val`
  * Definition for singly-linked list.
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
+ * class util.ListNode(var `val`: Int) {
+ *     var next: util.ListNode? = null
  * }
  */
 fun middleNode(head: ListNode?): ListNode? {

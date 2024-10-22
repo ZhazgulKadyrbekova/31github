@@ -1,3 +1,5 @@
+import util.ListNode
+
 fun main() {
     val li1 = ListNode(2)
     val li2 = ListNode(4)

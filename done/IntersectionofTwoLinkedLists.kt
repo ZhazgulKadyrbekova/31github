@@ -1,4 +1,4 @@
-import nonsolved.ListNode
+import util.ListNode
 
 fun main() {
     val li1 = ListNode(2)

@@ -1,9 +1,11 @@
+import util.ListNode
+
 fun main() {
     val li1 = ListNode(0)
     val li2 = ListNode(1)
     val li3 = ListNode(2)
     val li7 = ListNode(8)
-//    val li8 = ListNode(9)
+//    val li8 = util.ListNode(9)
     val li4 = ListNode(1000)
     val li5 = ListNode(1000)
     val li6 = ListNode(1000)

@@ -1,8 +1,9 @@
+import util.ListNode
 import java.util.*
 
 fun main() {
-//    val li1 = ListNode(2)
-//    val li2 = ListNode(4)
+//    val li1 = util.ListNode(2)
+//    val li2 = util.ListNode(4)
     val li3 = ListNode(7)
     val li7 = ListNode(8)
     val li8 = ListNode(9)
