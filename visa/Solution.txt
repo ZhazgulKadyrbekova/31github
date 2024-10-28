@@ -1,0 +1,120 @@
+package visa;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Solution {
+
+
+    public static void main(String[] args) {
+        Employee {
+            int salary;
+            str name;
+        }
+//List of Employees
+        Employee emp1 = new Employee("A", 1000);
+        Employee emp2 = new Employee("B", 2000);
+.
+.
+.
+        Find Employee with 3 rd highest salary;
+
+        int fir = 0, sec, thir;
+        for (Employee employee : list) {
+            if (employee.salary >= fir) {
+                thir = sec;
+                sec = fir;
+                fir = employee.salary;
+            } else if (employee.salary >= sec) {
+                thir = sec;
+                sec = employee.salary;
+            } else if (employee.salary >= thir) {
+                thir = employee.salary;
+            }
+
+        }
+    }
+
+    public static void main(String[] args) {
+
+
+
+        int times[][] = [(9, 10:30), (9:30, 10), (10, 11), (11, 12)];
+
+
+
+        int meetingsPerminute = new int[24 * 60];//size - 24 * 60;
+
+        for (int[] start, end : times) {
+            startMin = start * 60;
+            endMin = end * 60;
+            for (int a = startMin; a <= endMin; a++) {
+                meetingsPerminute++;
+            }
+        }
+    }
+
+    public static boolean findItemsWithinBudget(int[] prices, int budget) {     //1,5,2
+
+
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < prices.length; i++) {
+            map.put(prices[i], true);
+        }
+
+//        List<Integer> pricesList = new ArrayList<>(prices);
+        for (int i = 0; i < prices.length; i++) {
+            int num = prices[i];
+            int key = budget - num;
+            if (map[key] > 0) {
+                map[key]
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+//[5, 10, 18, 25] 23
+//
+//        return [0, 2]
+    public static void main(String[] args) {
+
+//        Merge the basket if there are duplicates in cart
+        Map<String, int[]> cart = new HashMap<>();
+        cart.put("Chips", new int[]{2, 10}); // 2 chips packets, 10 dollars each
+        cart.put("Milk", new int[]{5, 3});  // 5 milk cartons, 3 dollars each
+        cart.put("Ketchup", new int[]{1, 12});
+        cart.put("Chips", new int[]{5, 10});
+
+        Map<String, Integer> resMap = new HashMap<>();
+        for (Map.Entry<String, List<Integer>> entry : cart.entrySet()) {
+            String key = entry.getKey();
+            int value = entry.getValue().get(0) * entry.getValue().get(1);
+            int oldVal = resMap.getOrDefault(key, 0);
+            resMap.put(key, value + oldVal);
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+
+        Map<String, Integer> cart = new HashMap<>();
+        cart.put("Chips", 12);
+        cart.put("Milk", 20);
+        cart.put("Cream", 8);
+
+        int max = 0;
+        for (int price : cart.values()) {
+            max = Math.max(max, price);
+        }
+
+        System.out.println(max);
+
+    }
+}
