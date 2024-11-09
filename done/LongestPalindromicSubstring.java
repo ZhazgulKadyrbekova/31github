@@ -2,7 +2,38 @@ package done;
 
 public class LongestPalindromicSubstring {
 
+    //dp
     public String longestPalindrome(String s) {
+        int n = s.length();
+
+        if (n == 1) return s;
+
+        boolean[][] dp = new boolean[n][n];
+
+        int maxLength = 0, start = 0, end = 0;
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = true;
+
+            for (int j = 0; j < i; j++) {
+                if (s.charAt(i) == s.charAt(j) && (i - j <= 2 || dp[i - 1][j + 1])) {
+                    dp[i][j] = true;
+                    if (i - j + 1 > maxLength) {
+                        maxLength = i - j + 1;
+                        start = j;
+                        end = i;
+                    }
+                }
+            }
+        }
+
+        return s.substring(start, end + 1);
+    }
+    //T:    O(n^2)      101ms       43.35%
+    //S:    O(n^2)      46.00MB     16.99%
+
+
+    // expand
+    public String longestPalindrome2(String s) {
         int n = s.length();
 
         if (n == 1) return s;
