@@ -1,11 +1,16 @@
-import done.JumpGameIV;
+import done.LongestPalindromicSubstring;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new JumpGameIV();
+        var solution = new LongestPalindromicSubstring();
 
-//        var res = solution.minJumps(new int[] {100,-23,-23,404,100,23,23,23,3,404});
-        var res = solution.minJumps(new int[] {100,23,23,23,23,23,23,404});
+//        var res = solution.longestPalindrome("babad");
+//        var res = solution.longestPalindrome("baabad");
+//        var res = solution.longestPalindrome("ac");
+        var res = solution.longestPalindrome("cbbd");
+//        var res = solution.longestPalindrome("aba");
+//        var res = solution.longestPalindrome("babadxbababd");
+//        var res = solution.longestPalindrome("abbazezalphaduethoohbookkoob");
         System.out.println(res);
     }
 }
