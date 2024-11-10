@@ -1,12 +1,10 @@
-import done.MaximumSubarray;
+import done.MinimumPathSum;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new MaximumSubarray();
+        var solution = new MinimumPathSum();
 
-//        var res = solution.maxSubArray(new int[] {-2,1,-3,4,-1,2,1,-5,4});
-//        var res = solution.maxSubArray(new int[] {1});
-        var res = solution.maxSubArray(new int[] {5,4,-1,7,8});
+        var res = solution.minPathSum(new int[][] {{1,3,1},{1,5,1},{4,2,1}});
         System.out.println(res);
     }
 }
