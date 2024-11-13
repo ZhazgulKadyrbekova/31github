@@ -1,17 +1,16 @@
-import nonsolved.PathSumII;
-import util.TreeNode;
+import nonsolved.SetMatrixZeroes;
+
+import java.util.Arrays;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new PathSumII();
+        var solution = new SetMatrixZeroes();
+        var arr = new int[][] {{1,1,1},{0,1,1},{1,1,1}};
 
-//        var four = new TreeNode(4, null, null);
-        var three = new TreeNode(3, null, null);
-        var two = new TreeNode(-3, null, null);
-        var one = new TreeNode(-2,two,three);
-
-        var res = solution.pathSum(one, -5);
-        System.out.println(res);
+        solution.setZeroes(arr);
+        for (int a[] : arr) {
+            System.out.println(Arrays.toString(a));
+        }
     }
 
 }
