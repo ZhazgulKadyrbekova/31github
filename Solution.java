@@ -1,16 +1,16 @@
-import nonsolved.SetMatrixZeroes;
-
-import java.util.Arrays;
+import done.SumofRootToLeafBinaryNumbers;
+import util.TreeNode;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new SetMatrixZeroes();
-        var arr = new int[][] {{1,1,1},{0,1,1},{1,1,1}};
+        var solution = new SumofRootToLeafBinaryNumbers();
 
-        solution.setZeroes(arr);
-        for (int a[] : arr) {
-            System.out.println(Arrays.toString(a));
-        }
+        var three = new TreeNode(1, null, null);
+        var two = new TreeNode(0, null, null);
+        var one = new TreeNode(1,two,three);
+
+        var res = solution.sumRootToLeaf(one);
+        System.out.println(res);
     }
 
 }
