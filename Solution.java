@@ -1,15 +1,11 @@
-import done.SumofRootToLeafBinaryNumbers;
-import util.TreeNode;
+import done.KthLargestElementinanArray;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new SumofRootToLeafBinaryNumbers();
+        var solution = new KthLargestElementinanArray();
 
-        var three = new TreeNode(1, null, null);
-        var two = new TreeNode(0, null, null);
-        var one = new TreeNode(1,two,three);
-
-        var res = solution.sumRootToLeaf(one);
+//        var res = solution.findKthLargest(new int[] {3,2,1,5,6,4}, 2);
+        var res = solution.findKthLargest(new int[] {3,2,3,1,2,4,5,5,6},4);
         System.out.println(res);
     }
 
