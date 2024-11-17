@@ -1,11 +1,19 @@
-import done.KthLargestElementinanArray;
+import done.MaxAreaofIsland;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new KthLargestElementinanArray();
+        var solution = new MaxAreaofIsland();
 
-//        var res = solution.findKthLargest(new int[] {3,2,1,5,6,4}, 2);
-        var res = solution.findKthLargest(new int[] {3,2,3,1,2,4,5,5,6},4);
+        var res = solution.maxAreaOfIsland(new int[][]{
+                {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
+                {0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0},
+                {0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0}
+        });
         System.out.println(res);
     }
 
