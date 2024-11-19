@@ -1,15 +1,10 @@
-import done.BinaryTreePaths;
-import util.TreeNode;
+import done.LetterCombinationsofaPhoneNumber;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new BinaryTreePaths();
+        var solution = new LetterCombinationsofaPhoneNumber();
 
-        var three = new TreeNode(1, null, null);
-        var two = new TreeNode(0, null, null);
-        var one = new TreeNode(1,two,three);
-
-        var res = solution.binaryTreePaths(one);
+        var res = solution.letterCombinations("2");
         System.out.println(res);
     }
 
