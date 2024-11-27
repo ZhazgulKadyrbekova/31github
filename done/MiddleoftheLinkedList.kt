@@ -1,5 +1,7 @@
 package done
 
+import util.ListNode
+
 /**
  * Example:
  * var li = util.ListNode(5)
