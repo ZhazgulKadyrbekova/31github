@@ -1,9 +1,9 @@
-import done.PathSumIII;
+import done.BinaryTreeRightSideView;
 import util.TreeNode;
 
 public class Solution {
     public static void main(String[] args) {
-        var solution = new PathSumIII();
+        var solution = new BinaryTreeRightSideView();
 
         var ten = new TreeNode(1, null, null);
         var nine = new TreeNode(5, null, null);
@@ -16,7 +16,7 @@ public class Solution {
         var two = new TreeNode(4, three, null);
         var one = new TreeNode(5, two, six);
 
-        var res = solution.pathSum(one, 13);
+        var res = solution.rightSideView(one);
         System.out.println(res);
     }
 
